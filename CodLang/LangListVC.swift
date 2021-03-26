@@ -1,10 +1,3 @@
-//
-//  LangListVC.swift
-//  CodLang
-//
-//  Created by Алексей Филатов on 17.03.2021.
-//
-
 import UIKit
 
 class LangListVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -12,8 +5,7 @@ class LangListVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
+        configureTableView()
     }
     
     var langArray = [
@@ -23,8 +15,13 @@ class LangListVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     ]
     let cellReuseIdentifier = "Cell"
     
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func configureTableView() {
         tableView.backgroundColor = .systemGray5
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+    }
+    
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return langArray.count
     }
     
@@ -37,7 +34,6 @@ class LangListVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
           return cell
     }
 
-    
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
     }

@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  CodLang
-//
-//  Created by Алексей Филатов on 17.03.2021.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
