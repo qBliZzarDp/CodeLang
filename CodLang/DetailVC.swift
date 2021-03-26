@@ -13,13 +13,17 @@ class DetailVC: UIViewController {
     @IBOutlet weak var detailLabel: UILabel!
     @IBOutlet weak var detailInfo: UITextView!
     
-    var deImage = ""
+    var deImage: UIImage?
     var deLabel = ""
     var deInfo = ""
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        detailImage.image = UIImage(named: deImage)
+       configUI()
+    }
+    
+    func configUI(){
+        detailImage.image = deImage
         detailLabel.text = deLabel
         detailInfo.isEditable = false
         detailInfo.isSelectable = false

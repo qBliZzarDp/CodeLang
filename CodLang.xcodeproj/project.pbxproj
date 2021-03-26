@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0101579C260246CB003FFCB9 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0101579B260246CB003FFCB9 /* DetailVC.swift */; };
-		010157A626026176003FFCB9 /* LangList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010157A526026176003FFCB9 /* LangList.swift */; };
+		010157A626026176003FFCB9 /* LangListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010157A526026176003FFCB9 /* LangListVC.swift */; };
 		010D292B260214B70002EEEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010D292A260214B70002EEEE /* AppDelegate.swift */; };
 		010D292D260214B70002EEEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010D292C260214B70002EEEE /* SceneDelegate.swift */; };
 		010D292F260214B70002EEEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010D292E260214B70002EEEE /* ViewController.swift */; };
@@ -17,11 +17,12 @@
 		010D2937260214BA0002EEEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 010D2935260214BA0002EEEE /* LaunchScreen.storyboard */; };
 		011B44A6260D002D00FF9DA9 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 011B44A5260D002D00FF9DA9 /* .gitignore */; };
 		01212A0026046DCF006A2E33 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012129FF26046DCF006A2E33 /* CustomCell.swift */; };
+		01C6D239260E53780083FF55 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C6D238260E53780083FF55 /* Language.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0101579B260246CB003FFCB9 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
-		010157A526026176003FFCB9 /* LangList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LangList.swift; sourceTree = "<group>"; };
+		010157A526026176003FFCB9 /* LangListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LangListVC.swift; sourceTree = "<group>"; };
 		010D2927260214B70002EEEE /* CodLang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodLang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		010D292A260214B70002EEEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		010D292C260214B70002EEEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +33,7 @@
 		010D2938260214BA0002EEEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		011B44A5260D002D00FF9DA9 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		012129FF26046DCF006A2E33 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		01C6D238260E53780083FF55 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,13 +70,14 @@
 				010D292C260214B70002EEEE /* SceneDelegate.swift */,
 				010D292E260214B70002EEEE /* ViewController.swift */,
 				010D2930260214B70002EEEE /* Main.storyboard */,
-				011B44A5260D002D00FF9DA9 /* .gitignore */,
-				010157A526026176003FFCB9 /* LangList.swift */,
+				010157A526026176003FFCB9 /* LangListVC.swift */,
+				01C6D238260E53780083FF55 /* Language.swift */,
 				012129FF26046DCF006A2E33 /* CustomCell.swift */,
 				0101579B260246CB003FFCB9 /* DetailVC.swift */,
 				010D2933260214BA0002EEEE /* Assets.xcassets */,
 				010D2935260214BA0002EEEE /* LaunchScreen.storyboard */,
 				010D2938260214BA0002EEEE /* Info.plist */,
+				011B44A5260D002D00FF9DA9 /* .gitignore */,
 			);
 			path = CodLang;
 			sourceTree = "<group>";
@@ -157,7 +160,8 @@
 				010D292F260214B70002EEEE /* ViewController.swift in Sources */,
 				0101579C260246CB003FFCB9 /* DetailVC.swift in Sources */,
 				010D292B260214B70002EEEE /* AppDelegate.swift in Sources */,
-				010157A626026176003FFCB9 /* LangList.swift in Sources */,
+				01C6D239260E53780083FF55 /* Language.swift in Sources */,
+				010157A626026176003FFCB9 /* LangListVC.swift in Sources */,
 				01212A0026046DCF006A2E33 /* CustomCell.swift in Sources */,
 				010D292D260214B70002EEEE /* SceneDelegate.swift in Sources */,
 			);

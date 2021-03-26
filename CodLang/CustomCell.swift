@@ -24,4 +24,8 @@ class CustomCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
 
+    func set(language: Language) {
+        cellName.text = language.title
+        cellImage.image = language.image
+    }
 }
