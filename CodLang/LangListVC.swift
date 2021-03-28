@@ -1,3 +1,10 @@
+//
+//  LangListVC.swift
+//  CodLang
+//
+//  Created by Алексей Филатов on 17.03.2021.
+//
+
 import UIKit
 
 class LangListVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -42,9 +49,7 @@ class LangListVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: true)
         guard let toDetailVC = self.storyboard?.instantiateViewController(withIdentifier: "DetailVC") as? DetailVC else { return }
         let lang = langArray[indexPath.row]
-        toDetailVC.deImage = lang.image
-        toDetailVC.deInfo = lang.description
-        toDetailVC.deLabel = lang.title
+        toDetailVC.lang = lang
         self.navigationController?.pushViewController(toDetailVC, animated: true)
         }
 }

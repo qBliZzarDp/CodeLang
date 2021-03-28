@@ -1,3 +1,10 @@
+//
+//  DetailVC.swift
+//  CodLang
+//
+//  Created by Алексей Филатов on 17.03.2021.
+//
+
 import UIKit
 
 class DetailVC: UIViewController {
@@ -6,9 +13,7 @@ class DetailVC: UIViewController {
     @IBOutlet weak var detailLabel: UILabel!
     @IBOutlet weak var detailInfo: UITextView!
     
-    var deImage: UIImage?
-    var deLabel = ""
-    var deInfo = ""
+    var lang: Language?
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,10 +21,12 @@ class DetailVC: UIViewController {
     }
     
     func configUI(){
-        detailImage.image = deImage
-        detailLabel.text = deLabel
+        detailImage.image = lang?.image
+        detailImage.layer.masksToBounds = true
+        detailImage.layer.cornerRadius = detailImage.bounds.width / 2
+        detailLabel.text = lang?.title
+        detailInfo.text = lang?.description
         detailInfo.isEditable = false
         detailInfo.isSelectable = false
-        detailInfo.text = deInfo
     }
 }
