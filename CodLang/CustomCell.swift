@@ -11,10 +11,6 @@ class CustomCell: UITableViewCell {
     @IBOutlet weak var cellImage: UIImageView!
     @IBOutlet weak var cellName: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-    
     override func layoutSubviews() {
     super.layoutSubviews()
     cellImage.layer.masksToBounds = true
@@ -22,8 +18,10 @@ class CustomCell: UITableViewCell {
     }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
+    func set(language: Language) {
+        cellName.text = language.title
+        cellImage.image = language.image
+    }
 }

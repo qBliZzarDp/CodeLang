@@ -13,27 +13,20 @@ class DetailVC: UIViewController {
     @IBOutlet weak var detailLabel: UILabel!
     @IBOutlet weak var detailInfo: UITextView!
     
-    var deImage = ""
-    var deLabel = ""
-    var deInfo = ""
+    var lang: Language?
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        detailImage.image = UIImage(named: deImage)
-        detailLabel.text = deLabel
-        detailInfo.isEditable = false
-        detailInfo.isSelectable = false
-        detailInfo.text = deInfo
+       configUI()
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func configUI(){
+        detailImage.image = lang?.image
+        detailImage.layer.masksToBounds = true
+        detailImage.layer.cornerRadius = detailImage.bounds.width / 2
+        detailLabel.text = lang?.title
+        detailInfo.text = lang?.description
+        detailInfo.isEditable = false
+        detailInfo.isSelectable = false
     }
-    */
-
 }

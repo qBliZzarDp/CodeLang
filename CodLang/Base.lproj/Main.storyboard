@@ -53,10 +53,10 @@
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="76.339285714285708"/>
         </scene>
-        <!--Lang List-->
+        <!--Lang ListVC-->
         <scene sceneID="XKa-vi-hql">
             <objects>
-                <viewController storyboardIdentifier="TableView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lCf-4K-fZw" customClass="LangList" customModule="CodLang" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TableView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lCf-4K-fZw" customClass="LangListVC" customModule="CodLang" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dzZ-ch-cTk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
